@@ -1,19 +1,16 @@
 
 function funForFun(){
     
-    var frstVar = 5, scndVar = 3;
-    var frstVarText = document.getElementById('st');
-    var scndVarText = document.getElementById('nd');
-    
-    frstVarText.innerHTML = frstVar;
-    scndVarText.innerHTML = scndVar;
-    
-    var textChanged = document.getElementById('out');
-    if (frstVar>scndVar){
-       textChanged.innerHTML = 'first is bigger';
-    }else if(frstVar==scndVar){
-        textChanged.innerHTML = 'no differences';
+    var number,outTextSetter;
+    outTextSetter = document.getElementById('out');
+    number = document.getElementById('inputID').value;
+    //do not care about letters :D
+    number = parseInt(number);  
+    if(number == 100){
+        outTextSetter.innerHTML = "<b>Number is 100, my congratz!<b>";
+    }else if(number < 100){
+        outTextSetter.innerHTML = "Number is lower that 100";
     }else{
-        textChanged.innerHTML = 'second is bigger';
+        outTextSetter.innerHTML = "Number is higher that 100";
     }
 }
