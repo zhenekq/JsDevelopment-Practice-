@@ -9,7 +9,7 @@ function cycleTest(){
         i++;
     }
     
-    var j = 100;
+    var j = 80;
     do{
         anotherResult.innerHTML += j + " ";
         j--;
